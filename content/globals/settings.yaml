@@ -1,18 +1,18 @@
 title: Settings
 data:
-  site_name: 'Starter''s Creek'
+  site_name: 'Epic Laravel'
   personality: casual
   show_signup: true
   social:
     -
       name: Twitter
-      url: 'https://twitter.com/statamic'
+      url: 'https://twitter.com/connor11528'
       icon: site/social-icons/twitter.svg
     -
       name: Github
-      url: 'https://github.com/statamic/starter-kit-starters-creek'
+      url: 'https://github.com/connor11528/epiclaravel.dev'
       icon: site/social-icons/github.svg
     -
       name: Email
-      url: 'mailto:jack@statamic.com'
+      url: 'mailto:connor@employbl.com'
       icon: site/social-icons/email.svg
