@@ -1,6 +1,6 @@
 title: Settings
 data:
-  site_name: 'Epic Laravel'
+  site_name: 'epiclaravel.dev'
   personality: casual
   show_signup: true
   social:
