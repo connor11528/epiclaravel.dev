@@ -4,9 +4,11 @@
     <p class="text-lg mt-8">Join our newsletter and get resources, curated content, and design inspiration delivered straight to your inbox.</p>
 
     {{# This is a static form you can wire up to anything. #}}
-    <form action="" class="mt-8 flex flex-wrap items-center md:w-2/3 mx-auto">
-        <label for="email" class="sr-only"></label>
-        <input id="email" class="w-full flex-1 bg-gray-200 py-3 px-6 rounded" type="email" placeholder="Your email" required>
+    <form action="https://employbl.us14.list-manage.com/subscribe/post" method="POST" class="mt-8 flex flex-wrap items-center md:w-2/3 mx-auto">
+        <input type="hidden" name="u" value="42dd73a709fbadb4a29ef1d0d">
+        <input type="hidden" name="id" value="b77fdad58d">
+        <label for="MERGE0" class="sr-only"></label>
+        <input id="MERGE0" class="w-full flex-1 bg-gray-200 py-3 px-6 rounded" type="email" placeholder="Your email" name="MERGE0" required>
         <button class="bg-black md:ml-3 mt-3 md:mt-0 w-full md:w-auto text-white py-3 px-6 rounded hover:squiggle" type="submit">Subscribe</button>
     </form>
 
