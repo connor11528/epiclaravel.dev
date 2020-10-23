@@ -6,19 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title }} — {{ settings:site_name }}</title>
         <meta name="description" content="{{ intro | strip_tags | entities }}">
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org/",
-              "@type": blogPost,
-              "name": "{{ title }}",
-              "author": {
-                "@type": "Person",
-                "name": "{{ author:name }}"
-              },
-              "datePublished": "{{ date format="Y-m-d" }}",
-              "description": "{{ intro | strip_tags | entities }}",
-            }
-        </script>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         {{ partial:personality }}
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
