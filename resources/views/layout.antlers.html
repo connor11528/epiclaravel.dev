@@ -10,6 +10,49 @@
         {{ partial:personality }}
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
         <script src="{{ mix src='/js/site.js' }}"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188496524-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-188496524-1');
+        </script>
+        <script>
+            ga_trackers = [];
+            ga.getAll().forEach(function(x, i) {
+                ga_trackers.push(x.get('name'))
+            })
+            ga_trackers.forEach(function(gaName) {
+                ga(gaName + '.require', 'Clearbit', {
+                    "mapping":{
+                        "type":"dimension1",
+                        "companyName":"dimension2",
+                        "companyDomain":"dimension3",
+                        "companyType":"dimension4",
+                        "companySector":"dimension5",
+                        "companyIndustryGroup":"dimension6",
+                        "companyIndustry":"dimension7",
+                        "companySubIndustry":"dimension8",
+                        "companySicCode":"dimension9",
+                        "companyNaicsCode":"dimension10",
+                        "companyCountry":"dimension11",
+                        "companyState":"dimension12",
+                        "companyCity":"dimension13",
+                        "companyFunding":"dimension14",
+                        "companyEstimatedAnnualRevenue":"dimension15",
+                        "companyEmployeesRange":"dimension16",
+                        "companyEmployees":"dimension17",
+                        "companyAlexaRank":"dimension18"
+                    }})
+            })
+        </script>
+
+        <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_f80220f11d1d51a6fb583a7664986136">
+        </script>
+
     </head>
     <body class="bg-white text-black font-body leading-normal personality-{{ settings:personality }}">
         {{ partial:nav }}
