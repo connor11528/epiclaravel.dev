@@ -8,6 +8,11 @@
         <meta name="description" content="{{ intro | strip_tags | entities }}">
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         {{ partial:personality }}
+        <style>
+            code {
+                color: rgb(18, 21, 30) !important;
+            }
+        </style>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
         <script src="{{ mix src='/js/site.js' }}"></script>
 
@@ -48,9 +53,6 @@
                         "companyAlexaRank":"dimension18"
                     }})
             })
-        </script>
-
-        <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_f80220f11d1d51a6fb583a7664986136">
         </script>
 
     </head>
